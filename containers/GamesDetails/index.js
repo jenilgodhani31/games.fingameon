@@ -19,7 +19,7 @@ function GamesDetails() {
 
     const scrollRef = useRef(null);
 
-    console.log("slug", slug)
+
 
     useEffect(() => {
         const loadData = async () => {
@@ -42,7 +42,6 @@ function GamesDetails() {
 
     const game = data.find(item => createSlug(item.name) === slug);
 
-    console.log("game", game)
 
     if (!game) return <div>Game not found</div>;
 
