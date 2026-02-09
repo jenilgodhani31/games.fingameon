@@ -152,7 +152,6 @@ function GamesDetails() {
                             data-ad-format="auto"
                             data-full-width-responsive="true" />
 
-                        <h1 className="text-[30px] mt-3 font-bold mb-4">All-games-business</h1>
 
                         {/* Blog Content */}
                         {game.blog && (
@@ -218,18 +217,6 @@ function GamesDetails() {
                                 ))}
                             </div>
                         )}
-
-
-                        {/* How to Play Section */}
-                        <div className="mt-8 ">
-                            <h1 className="text-[25px] font-bold mb-4">How to Play?</h1>
-                            {game.how_to_play.map((step, index) => (
-                                <p key={index} className="text-gray-700 text-[17px] leading-relaxed mb-2">
-                                    {index + 1}. {step}
-                                </p>
-                            ))}
-
-                        </div>
 
                         {/* Ads Section */}
                         <Ads
